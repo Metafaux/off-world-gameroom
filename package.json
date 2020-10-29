@@ -1,0 +1,25 @@
+{
+  "name": "off-world-gameroom",
+  "version": "1.0.0",
+  "description": "typescript pixi games",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metafaux/off-world-gameroom.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Metafaux/off-world-gameroom/issues"
+  },
+  "homepage": "https://github.com/Metafaux/off-world-gameroom#readme",
+  "dependencies": {
+    "pixi.js": "^5.3.3"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
+}
