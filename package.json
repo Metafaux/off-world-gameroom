@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Metafaux/off-world-gameroom.git"
   },
-  "author": "",
+  "author": "Metafaux",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Metafaux/off-world-gameroom/issues"
@@ -20,6 +20,10 @@
     "pixi.js": "^5.3.3"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.5"
   }
 }
