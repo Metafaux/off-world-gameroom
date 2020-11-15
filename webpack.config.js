@@ -1,20 +1,20 @@
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/app.ts',
   mode: 'development',
   resolve: {
-    extensions: ['.ts', '.js', '.json']
+    extensions: ['.ts', '.js', '.json'],
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
-        use: [{ loader: 'awesome-typescript-loader'}],
-        exclude: /node_modules/
-      }
-    ]
+        use: [{ loader: 'awesome-typescript-loader' }],
+        exclude: /node_modules/,
+      },
+    ],
   },
   devServer: {
     contentBase: 'dist',
@@ -28,6 +28,10 @@ module.exports = {
           from: 'build/assets',
           to: 'assets',
         },
+        {
+          from: 'src/assets',
+          to: 'assets',
+        },
       ],
     }),
     new HTMLWebpackPlugin({
@@ -35,4 +39,4 @@ module.exports = {
       filename: 'index.html',
     }),
   ],
-}
+};
